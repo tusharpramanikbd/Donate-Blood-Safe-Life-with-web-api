@@ -1,0 +1,110 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <script language="javascript" type="text/javascript">
+    /*function dynamicdropdown(listindex)
+    {
+        switch (listindex)
+        {
+        case "DHAKA" :
+            document.getElementById("status").options[0]=new Option("Select District","");
+            document.getElementById("status").options[1]=new Option("DHAKA","DHAKA");
+            document.getElementById("status").options[2]=new Option("FARIDPUR","FARIDPUR");
+			document.getElementById("status").options[3]=new Option("GAZIPUR","GAZIPUR");
+			document.getElementById("status").options[4]=new Option("GOPALGANJ","GOPALGANJ");
+			document.getElementById("status").options[5]=new Option("JAMALPUR","JAMALPUR");
+            break;
+        case "KHULNA" :
+            document.getElementById("status").options[0]=new Option("Select District","");
+            document.getElementById("status").options[1]=new Option("BAGERHAT","BAGERHAT");
+            document.getElementById("status").options[2]=new Option("CHUADANGA","CHUADANGA");
+            document.getElementById("status").options[3]=new Option("KUSHTIA","KUSHTIA");
+			document.getElementById("status").options[4]=new Option("KHULNA","KHULNA");
+			document.getElementById("status").options[5]=new Option("JESSORE","JESSORE");
+            break;
+		case "CHITTAGONG" :
+            document.getElementById("status").options[0]=new Option("Select District","");
+            document.getElementById("status").options[1]=new Option("CHITTAGONG","CHITTAGONG");
+            document.getElementById("status").options[2]=new Option("BANDARBAN","BANDARBAN");
+            document.getElementById("status").options[3]=new Option("BRAHMANBARIA","BRAHMANBARIA");
+			document.getElementById("status").options[4]=new Option("CHANDPUR","CHANDPUR");
+			document.getElementById("status").options[5]=new Option("COX'S BAZAR","COX'S BAZAR");
+            break;
+		case "BARISAL" :
+            document.getElementById("status").options[0]=new Option("Select District","");
+            document.getElementById("status").options[1]=new Option("BARISAL","BARISAL");
+            document.getElementById("status").options[2]=new Option("BARGUNA","BARGUNA");
+            document.getElementById("status").options[3]=new Option("BHOLA","BHOLA");
+			document.getElementById("status").options[4]=new Option("JHALOKATI","JHALOKATI");
+			document.getElementById("status").options[5]=new Option("PIROJPUR","PIROJPUR");
+            break;
+		case "RAJSHAHI" :
+            document.getElementById("status").options[0]=new Option("Select District","");
+            document.getElementById("status").options[1]=new Option("RAJSHAHI","RAJSHAHI");
+            document.getElementById("status").options[2]=new Option("BOGRA","BOGRA");
+            document.getElementById("status").options[3]=new Option("CHAPAINABABGANJ","CHAPAINABABGANJ");
+			document.getElementById("status").options[4]=new Option("JOYPURHAT","JOYPURHAT");
+			document.getElementById("status").options[5]=new Option("PABNA","PABNA");
+            break;
+		case "RANGPUR" :
+            document.getElementById("status").options[0]=new Option("Select District","");
+            document.getElementById("status").options[1]=new Option("RANGPUR","RANGPUR");
+            document.getElementById("status").options[2]=new Option("DINAJPUR","DINAJPUR");
+            document.getElementById("status").options[3]=new Option("GAIBANDHA","GAIBANDHA");
+			document.getElementById("status").options[4]=new Option("LALMONIRHAT","LALMONIRHAT");
+			//document.getElementById("status").options[5]=new Option("RANGPUR","RANGPUR");
+            break;
+		case "SYLHET" :
+            document.getElementById("status").options[0]=new Option("Select District","");
+            document.getElementById("status").options[1]=new Option("SYLHET","SYLHET");
+            document.getElementById("status").options[2]=new Option("HABIGANJ","HABIGANJ");
+            document.getElementById("status").options[3]=new Option("MAULVIBAZAR","MAULVIBAZAR");
+			document.getElementById("status").options[4]=new Option("SUNAMGANJ","SUNAMGANJ");
+            break;
+        }
+
+        return true;
+    }*/
+    </script>
+</head>
+
+
+<body background="~/images/reg_bg.jpg" style="background-repeat: no-repeat;background-position: center;">
+
+    <center>
+        <div style="background-color:#d10a46;height:50px">
+            <ul style="list-style: none; padding-top: 15px">
+                <li style="float: left; padding-left: 50px;color: white"><a href="../Home/Index" style="text-decoration: none;color: white;">Home</a></li>
+
+                <li style="float: left; padding-left: 50px;color: white"><a href="../User/Login" style="text-decoration: none;color: white;">Login</a></li>
+
+
+
+
+            </ul> <br>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class=" col-md-3"></div>
+                <div class=" col-md-6">
+
+
+
+                    @RenderBody()
+                </div>
+
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html>
+<body background="~/images/profile_background.jpg">
+    <center>
+        <div style="background-color:#d10a46;height:50px">
+            <ul style="list-style: none; padding-top: 15px">
+
+
+                <li style="float: left; padding-left: 50px;color: white"><a href="../User/Profile" style="text-decoration: none;color: white;">Profile</a></li>
+
+                <li style="float: left; padding-left: 50px;color: white"><a href="../User/Search" style="text-decoration: none;color: white;">Blood Search</a></li>
+                <li style="float: right; padding-right: 50px;color: white"><a href="~/User/Logout" style="text-decoration: none;color: white;"><b>Logout</b></a></li>
+                <li style="float: right; padding-right: 50px;color: white"><a href="../User/Password" style="text-decoration: none;color: white;">Change Password</a></li>
+
+
+            </ul> <br>
+        </div> <br>
+        <h1>Profile</h1>
+
+        @RenderBody()
+        <tr style="background-color: #af0b42; color: white;">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+
+        </tr>
+
+        </table>
+        </div>
+
+
+
+
+
+</body>
+</html>

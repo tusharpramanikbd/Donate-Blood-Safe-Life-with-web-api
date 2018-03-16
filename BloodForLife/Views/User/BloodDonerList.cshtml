@@ -1,0 +1,80 @@
+﻿@model IEnumerable<BloodForLifeEntity.User>
+
+@{
+    ViewBag.Title = "BloodDonerList";
+    Layout = "~/Views/Shared/_ProfileLayout.cshtml";
+}
+
+<table class="table thead-dark " border="1">
+    <thead class="thead-inverse">
+        <tr class="">
+            <th>
+                User Name
+            </th>
+            <th>
+                Full Name
+            </th>
+            <th>
+                Gender
+            </th>
+
+            <th>
+                Age
+            </th>
+            <th>
+                Weight
+            </th>
+            <th>
+                Blood Group
+            </th>
+            
+            <th>
+                Address
+            </th>
+
+
+            <th>
+                Action
+            </th>
+        </tr>
+
+    </thead>
+
+    @foreach (var User in ViewBag.Users)
+    {
+
+        <tr>
+            <td>
+                @User.userName
+            </td>
+            <td>
+                @User.fullName
+            </td>
+            <td>
+                @User.gender
+            </td>
+            <td>
+                @User.age
+            </td>
+            <td>
+                @User.weight
+            </td>
+            <td>
+                @User.bloodGroup
+            </td>
+           
+            <td>
+                @User.address
+            </td>
+            <td>
+               
+                @Html.ActionLink("Request", "Request", new { userName = @User.userName })
+            </td>
+
+
+        </tr>
+    }
+
+</table>
+
+

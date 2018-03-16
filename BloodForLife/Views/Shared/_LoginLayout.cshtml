@@ -1,0 +1,74 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html>
+
+<head>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <script>
+
+			/*function f(){
+
+			  formObj = document.getElementsByTagName("form")[0];
+			  //formObj.action = "response.php";
+			  var divObj1 = document.getElementById("msg1");
+			  var divObj2 = document.getElementById("msg2");
+			  var idTextBox1 = document.getElementsByName("userName")[0];
+			  var idTextBox2 = document.getElementsByName("password")[0];
+			  if(idTextBox1.value=="" || idTextBox2.value=="")
+			  {
+					  if(idTextBox1.value=="")
+					  {
+						  divObj1.innerHTML = "Name Required";
+				      }
+
+					  if(idTextBox2.value=="")
+					  {
+						  divObj2.innerHTML = "Password Required";
+					  }
+						 return false;
+			  }
+
+			  else{
+				  return true;
+			  }
+			}*/
+    </script>
+</head>
+<body background="images/Login_bg.jpg" style="background-size: cover; background-repeat: no-repeat;">
+    <center>
+        <div style="background-color:#d10a46;height:50px">
+            <ul style="list-style: none; padding-top: 15px">
+                <li style="float: left; padding-left: 50px;color: white"><a href="../Home/Index" style="text-decoration: none;color: white;">Home</a></li>
+
+                <li style="float: left; padding-left: 50px;color: white"><a href="../User/Registration" style="text-decoration: none;color: white;">Registration</a></li>
+
+        </div>
+
+
+        <p style="color:#d10a46"><i><b>"If you are a blood donor, you are a hero to someone, somewhere, who received your gracious gift of life."</b></i></p>
+
+  
+        <div class="container-fluid">
+            <div class="container">
+                <div class=" col-md-3"></div>
+                <div class=" col-md-6">
+
+
+
+                    @RenderBody()
+                </div>
+
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        Not Registrated Yet!!!...<a href="../User/Registration">Register</a>
+
+
+        </div>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_AdminLoginLayout.cshtml";
+}
+
+<center>
+
+    <h1 style="padding-top: 10%;margin-bottom: 0px;">Admin Log in</h1>
+
+    <form method="post">
+        <table>
+            <tr>
+                <td><b>User Name</b></td>
+                <td><input style="align-items: right" type="text-box" name="userName" value="" /></td>
+                <td><span id="msg1"></span></td></br></br>
+            </tr>
+
+            <tr>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td><b>Password</b></td>
+                <td><input type="password" name="password" value="" /></td>
+                <td><span id="msg2"></span></td>
+            </tr>
+        </table>
+        <div></div><br>
+        <input type="submit" name="login" value="Login" style="background-color: #d10a46; color: white; width: 80px; height: 30px; border-radius: 10px; border-color: white ">
+
+    </form>
+</center>

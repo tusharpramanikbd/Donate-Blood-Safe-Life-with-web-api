@@ -1,0 +1,37 @@
+﻿@model IEnumerable<BloodForLifeEntity.Admin>
+
+@{
+    ViewBag.Title = "showAllAdmin";
+    Layout = "~/Views/Shared/_AdminLayouts.cshtml";
+}
+
+<h2>showAllAdmin</h2>
+
+<p>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.userName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.userName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>|
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
